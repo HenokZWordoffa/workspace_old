@@ -1,6 +1,6 @@
-import java.util.Arrays;
+//import java.util.Arrays;
 import java.util.Calendar;
-import java.util.Date;
+//import java.util.Date;
 import java.util.GregorianCalendar;
 import java.util.Scanner;
 
@@ -29,52 +29,54 @@ public class DateAssignment
 		//System.out.println("Year:" + gc.get(Calendar.YEAR));
 		
 		System.out.println();
-		System.out.println(months[gc.get(Calendar.MONTH)] + "   " + year);
+		System.out.println(months[gc.get(Calendar.MONTH)] + " " + year);
 		System.out.println();
 		System.out.println("Sun \t" + "Mon\t" +"Tue\t" +"Wed\t" +"Thu\t" +"Fri\t" +"Sat\t");
 		 
+			
 		switch (daysOfWeek){
 		
 		case 1: 
 			int i;
 			System.out.print("\t");
-			for(i = 1; i<31; i++)
+			for(i = 1; i<32; i++)
 			if ( (i+1) %7!=0){System.out.print(i + "\t");}
 			else {System.out.print(i); System.out.println();}
 			break;
 		case 2: 
-			System.out.print("\t\t");
-			for(i = 1; i<31; i++)
+			for(int j=0; j<2; j++){System.out.print("\t");}
+			for(i = 1; i<32; i++)
 			if ( (i+2) %7!=0){System.out.print(i + "\t");}
 			else {System.out.print(i); System.out.println();}
 			break;
 		case 3: 
-			System.out.print("\t\t\t");
-			for(i = 1; i<31; i++)
+			for(int j=0; j<3; j++){System.out.print("\t");}
+			for(i = 1; i<32; i++)
 			if ( (i+3) %7!=0){System.out.print(i + "\t");}
 			else {System.out.print(i); System.out.println();}
 			break;
 		case 4: 
-			System.out.print("\t\t\t\t");
-			for(i = 1; i<31; i++)
+			for(int j=0; j<4; j++){System.out.print("\t");}
+			for(i = 1; i<32; i++)
 			if ( (i+4) %7!=0){System.out.print(i + "\t");}
 			else {System.out.print(i); System.out.println();}
 			break;
 		case 5: 
-			System.out.print("\t\t\t\t");
-			for(i = 1; i<31; i++)
+			for(int j=0; j<5; j++){System.out.print("\t");}
+			for(i = 1; i<32; i++)
 			if ( (i+5) %7!=0){System.out.print(i + "\t");}
 			else {System.out.print(i); System.out.println();}
 			break;
 		case 6: 
-			System.out.print("\t\t\t\t");
-			for(i = 1; i<31; i++)
+			for(int j=0; j<6; j++){System.out.print("\t");}
+			
+			for(i = 1; i<32; i++)
 			if ( (i+6) %7!=0){System.out.print(i + "\t");}
 			else {System.out.print(i); System.out.println();}
 			break;
 			
 		case 7:
-			for(i = 1; i<31; i++)
+			for(i = 1; i<32; i++)
 			if (i %7!=0){System.out.print(i + "\t");}
 			else {System.out.print(i); System.out.println();}	
 			break;
